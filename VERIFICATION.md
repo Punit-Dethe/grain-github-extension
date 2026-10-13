@@ -1,3 +1,22 @@
+# Package options candidate — 14 October 2026
+
+Version 0.1.1 declares public `transport.headers.x-mcp-toolsets = all`.
+The maintained CLI reports **doctor: 0 findings** and produces the canonical
+0.1.1 descriptor. The MCP URL, OAuth authentication declaration and extension
+identity are unchanged. There is no native bundle or embedded credential.
+
+The shared Grain source validates options, preserves signed artifact/revision
+ownership and forwards them through the official SDK. This candidate has not
+been published to the signed catalogue or exercised on a matching installed
+alpha. Live all-toolset exposure and the earlier update/file-routing failures
+remain unverified/unresolved. No additional build or release was dispatched.
+
+The previous installed alpha passed private README read/restart, one issue
+creation and one branch creation. Those results do not certify this candidate,
+all GitHub actions or every account permission. No failed write was replayed.
+
+The earlier record below is retained as dated history, not current status.
+
 # Initial verification — 9 October 2026
 
 This is a **publication candidate**, not a certified live GitHub connection.

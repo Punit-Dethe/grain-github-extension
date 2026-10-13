@@ -8,20 +8,24 @@ worker, JavaScript bundle, local MCP process or custom GitHub API implementation
 
 ## Status
 
-Version **0.1.0** is an initial publication candidate, not an activated public
-store release. Package validation and unauthenticated endpoint checks do not
-prove account sign-in or tool execution. See [verification](VERIFICATION.md).
+Version **0.1.1** is the package-owned transport-options candidate. It declares
+`x-mcp-toolsets: all` in `transport.headers`; Grain's shared SDK transport
+forwards the option without a GitHub-specific runtime branch. The base URL is
+unchanged, preserving the existing first-party OAuth resource/client binding.
+The declaration changes the advertised catalogue, not account permissions or
+approval requirements. The provider remains responsible for its tools.
 
-Grain's current installation/account/runtime machinery supports this descriptor.
-GitHub does not support dynamic OAuth client registration. Until Grain's own
-registered application is integrated, a developer must configure a dedicated
-GitHub OAuth/GitHub App's client credentials through Grain's existing account
-controls. A successful Linear login does not establish GitHub authentication.
-See [GitHub's host integration guide](https://github.com/github/github-mcp-server/blob/main/docs/host-integration.md).
+This candidate requires an alpha containing Grain's header contract. It has
+not replaced the published catalogue entry or been verified live with that
+binary. Existing tester sign-in/read/issue/branch evidence belongs to the
+previous installed build; update/close and file routing had unresolved failures.
+See [verification](VERIFICATION.md).
 
-Ordinary users of the eventual supported release should install and sign in
-without registering apps, entering client credentials or editing JSON. That
-onboarding is still pending; do not advertise this candidate as one-click ready.
+Supported tester alphas use Grain's registered GitHub App and connection-owned
+vault; users sign in rather than create their own developer application.
+Community preregistered OAuth onboarding remains a shared platform follow-up,
+not a secret stored in this descriptor. No OAuth identity or repository grant
+is changed by this candidate.
 
 ## Package and submit
 
@@ -43,7 +47,7 @@ After committing source and tagging the reviewed version, use the actual full
 commit SHA rather than an example pin:
 
 ```powershell
-grain-ext submit --registry C:\path\to\grain-extensions --repo https://github.com/Punit-Dethe/grain-github-extension --tag v0.1.0 --commit <actual-full-commit-sha> --license MIT --contact https://github.com/Punit-Dethe/grain-github-extension/issues
+grain-ext submit --registry C:\path\to\grain-extensions --repo https://github.com/Punit-Dethe/grain-github-extension --tag v0.1.1 --commit <actual-full-commit-sha> --license MIT --contact https://github.com/Punit-Dethe/grain-github-extension/issues
 ```
 
 The generated registry submission needs the existing independent source review,
