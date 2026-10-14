@@ -16,11 +16,11 @@ The declaration changes the advertised catalogue, not account permissions or
 approval requirements. The provider remains responsible for its tools.
 
 The tester update is published at catalogue index 4, source tag `v0.1.1`
-(`394176037b46ecbfde34d7af0996a505b3352400`). Public signatures/assets and HTTP
-delivery pass; matching installed-alpha acceptance is pending. It requires an
-alpha containing Grain's header contract. Existing sign-in/read/issue/branch evidence belongs to the
-previous installed build; update/close and file routing had unresolved failures.
-See [verification](VERIFICATION.md).
+(`394176037b46ecbfde34d7af0996a505b3352400`). Public delivery, matching signed
+update/account retention, 100-tool discovery, private read/restart and representative
+issue create/update/close and branch/file writes pass. The configured Gemini route
+needed an external 9router schema fix; two fixture errors were corrected. This
+does not certify all tools/account permissions. See [verification](VERIFICATION.md).
 
 Supported tester alphas use Grain's registered GitHub App and connection-owned
 vault; users sign in rather than create their own developer application.

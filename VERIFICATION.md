@@ -1,5 +1,24 @@
 # Published tester update — 14 October 2026
 
+## Latest installed acceptance
+
+Matching alpha binary `5d830826565169568cfc00fe7c22fc6e483c0f72a87916fd60fa21057e055fe4`
+passes signed 0.1.0 → 0.1.1 update/account retention, 100-tool discovery and private
+read/restart/read. With the existing configured Gemini model through repaired
+9router, issue #2 is created, updated and closed; branch `grain-check-feb200ee`
+and exact `grain-agent-check.txt` contents are independently verified. Main is
+unchanged. Cleanup/restoration Pass and no completed write is replayed.
+
+The immediate issue-list check was stale; the file fixture wrongly expected REST
+base64 instead of the current MCP tool's literal content. Those failures remain
+recorded alongside the later independent/corrected acceptance. Update/branch traces
+show two initial discovery tools then four/three relevant schemas; the successful
+file continuation has no captured trace, so its separate exposure verdict remains
+Blocked. Detailed reports are in Grain's maintained progress document. This is
+representative acceptance, not every GitHub tool or account grant. No new app release.
+
+The remaining paragraphs are the earlier publication-time record.
+
 Version 0.1.1 declares public `transport.headers.x-mcp-toolsets = all`.
 The maintained CLI reports **doctor: 0 findings** and produces the canonical
 0.1.1 descriptor. The MCP URL, OAuth authentication declaration and extension
