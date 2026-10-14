@@ -1,4 +1,4 @@
-# Package options candidate — 14 October 2026
+# Published tester update — 14 October 2026
 
 Version 0.1.1 declares public `transport.headers.x-mcp-toolsets = all`.
 The maintained CLI reports **doctor: 0 findings** and produces the canonical
@@ -6,10 +6,16 @@ The maintained CLI reports **doctor: 0 findings** and produces the canonical
 identity are unchanged. There is no native bundle or embedded credential.
 
 The shared Grain source validates options, preserves signed artifact/revision
-ownership and forwards them through the official SDK. This candidate has not
-been published to the signed catalogue or exercised on a matching installed
-alpha. Live all-toolset exposure and the earlier update/file-routing failures
-remain unverified/unresolved. No additional build or release was dispatched.
+ownership and forwards them through the official SDK. Version 0.1.1 is published
+at catalogue index 4, registry commit `36704a63fd14bcabb28a4bc5a4f349fed2010ddc`.
+The exact source tag is `v0.1.1`, commit `394176037b46ecbfde34d7af0996a505b3352400`;
+later documentation commits do not move that tag or change the signed source.
+Maintainer approval was explicit for this tester update; other packages retain
+their independent review requirements. Genuine CI preparation/attestation and
+signing passed. Independent public delivery verified signatures, addressed
+assets, the mutable app URL and pinned-commit bytes across 54 HTTP requests.
+Matching installed-alpha update/account/Agent acceptance is still pending.
+One tester artifact build is running; no application release was published.
 
 The previous installed alpha passed private README read/restart, one issue
 creation and one branch creation. Those results do not certify this candidate,

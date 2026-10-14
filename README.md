@@ -15,9 +15,10 @@ unchanged, preserving the existing first-party OAuth resource/client binding.
 The declaration changes the advertised catalogue, not account permissions or
 approval requirements. The provider remains responsible for its tools.
 
-This candidate requires an alpha containing Grain's header contract. It has
-not replaced the published catalogue entry or been verified live with that
-binary. Existing tester sign-in/read/issue/branch evidence belongs to the
+The tester update is published at catalogue index 4, source tag `v0.1.1`
+(`394176037b46ecbfde34d7af0996a505b3352400`). Public signatures/assets and HTTP
+delivery pass; matching installed-alpha acceptance is pending. It requires an
+alpha containing Grain's header contract. Existing sign-in/read/issue/branch evidence belongs to the
 previous installed build; update/close and file routing had unresolved failures.
 See [verification](VERIFICATION.md).
 
