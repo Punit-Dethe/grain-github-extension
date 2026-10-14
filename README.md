@@ -23,8 +23,8 @@ See [verification](VERIFICATION.md).
 
 Supported tester alphas use Grain's registered GitHub App and connection-owned
 vault; users sign in rather than create their own developer application.
-Community preregistered OAuth onboarding remains a shared platform follow-up,
-not a secret stored in this descriptor. No OAuth identity or repository grant
+Community public-client OAuth onboarding is supported by the current shared
+contract; it is not a secret stored in this descriptor. No OAuth identity or repository grant
 is changed by this candidate.
 
 ## Package and submit
@@ -38,7 +38,7 @@ grain-ext doctor
 grain-ext pack
 ```
 
-The artifact is `com.grain.github-0.1.0.mcp.json`. `DESCRIPTION.md` is store copy;
+The artifact is `com.grain.github-0.1.1.mcp.json`. `DESCRIPTION.md` is store copy;
 README is maintainer documentation. `media/cover.webp` is the signed store artwork.
 The original GitHub integration marks are under `assets/`; see their
 [attribution and terms](assets/README.md).
