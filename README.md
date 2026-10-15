@@ -1,5 +1,11 @@
 # GitHub for Grain
 
+Artwork candidate **0.1.2** separates the 512×512 listing icon from three wide
+gallery images. URL, OAuth identity and toolset options are unchanged. Source
+validation and packaging are local checks; the exact candidate still needs
+registry review, signing and public activation. Existing published evidence below
+continues to refer to 0.1.1. See [artwork sources](assets/README.md).
+
 A Grain-authored MCP extension connecting the Agent to
 [GitHub's official remote MCP server](https://github.com/github/github-mcp-server).
 GitHub operates the server at `https://api.githubcopilot.com/mcp/`; this repository
